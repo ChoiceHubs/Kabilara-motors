@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KABILARA MOTORS</title>
+  <link rel="stylesheet" href="kabila.css">
+</head>
+<body>
+
+  <header>
+    <h1>KABILARA MOTORS</h1>
+    <p> <b><u>WELCOME TO KABILARA MOTORS.</u> </b><br>We deal in all kinds of motors and parts at affordable prices. Your location is not a barrier.</p>
+  </header>
+
+  <h2>OUR MOTOR BIKES</h2>
+
+  <!-- Filter Buttons -->
+  <div class="filter">
+    <button onclick="filtermotors('all')">All</button>
+    <button onclick="filtermotors('apsonic')">Apsonic</button>
+    <button onclick="filtermotors('sonlink')">Sonlink</button>
+    <button onclick="filtermotors('haojue')">Haojue</button>
+  </div>
+
+  <!-- Search Box -->
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Search by model name..." onkeyup="searchMotors()" />
+  </div>
+
+  <!-- Navigation Buttons -->
+  <div class="navigation-buttons">
+    <button onclick="prevMotor()">Previous</button>
+    <button onclick="nextMotor()">Next</button>
+  </div>
+
+  <!-- Motors Section -->
+  <section class="gallery">
+    <!-- HAOJUE -->
+    <div class="motor-brand haojue">
+      <img src="haojue/Screenshot_20250626-104026.jpg" onclick="enlarge(this)">
+      <p>Haojue-5</p>
+    </div>
+    <div class="motor-brand haojue">
+      <img src="haojue/Screenshot_20250626-103557.jpg" onclick="enlarge(this)">
+      <p>Haojue (HJ125-8K)</p>
+    </div>
+    <div class="motor-brand haojue">    
+    
+    <img src="haojue/Screenshot_20250626-095626.jpg" alt="" onclick="enlarge(this)">
+    <p>haojue Xpress</p>
+    </div>
+
+<div class="motor-brand haojue" >
+    <img src="haojue/Screenshot_20250626-104405.jpg" alt="" onclick="enlarge(this)" />
+    <p>Haujue (Hj150-6)</p>
+    </div>
+
+    <!-- APSONIC -->
+    <div class="motor-brand apsonic">
+      <img src="apsonic-motos/Screenshot_20250625-223217.jpg" onclick="enlarge(this)">
+      <p>APSONIC 110 JAGUAR C5</p>
+    </div>
+    <div class="motor-brand apsonic">
+      <img src="apsonic-motos/Screenshot_20250625-222133.jpg" onclick="enlarge(this)">
+      <p>APSONIC KOMBIAN</p>
+    </div>
+    <div class=" motor-brand apsonic" >
+    <img src="apsonic-motos/Screenshot_20250625-222523.jpg" alt="" onclick="enlarge(this)">
+    <p>Apsonic Nova 200 </p>
+    </div>
+    <div  class="motor-brand apsonic">
+<img src="apsonic-motos/Screenshot_20250625-222438.jpg" alt="" onclick="enlarge(this)" >
+<p>Apsonic (Ap125-8)</p>
+    </div>
+    <div class="motor-brand apsonic" >
+<img src="apsonic-motos/Screenshot_20250625-222043.jpg" alt="" onclick="enlarge(this)" >
+<p>APSONIC JANGLE</p>
+</div>
+
+
+    <!-- SONLINK -->
+    <div class="motor-brand sonlink">
+      <img src="sonlinlik-motors/Screenshot_20250627-093118.jpg" onclick="enlarge(this)">
+      <p>Sonlink (SL125-8)</p>
+    </div>
+    <div class="motor-brand sonlink">
+      <img src="sonlinlik-motors/Screenshot_20250627-093834.jpg" onclick="enlarge(this)">
+      <p>Sonlink-5</p>
+    </div>
+
+    <div class="motor-brand sonlink">
+    <img src="sonlinlik-motors/Screenshot_20250627-093224.jpg" alt="" onclick="enlarge(this)">
+    <p>Sonlink Jangle</p>
+ </div>
+ <div class="motor-brand sonlink" >
+    <img src="sonlinlik-motors/Screenshot_20250627-093428.jpg" alt="" onclick="enlarge(this)">
+    <p>SONLINK KOMBIAN</p>
+ </div>
+<div class="motor-brand sonlink" >
+    <img src="sonlinlik-motors/Screenshot_20250627-093459.jpg" alt="" onclick="enlarge(this)">
+    <p>Sonlink (SL125)</p>
+</div>
+<div class="motor-brand sonlink" >
+    <img src="sonlinlik-motors/Screenshot_20250627-093519.jpg" alt="" onclick="enlarge(this)" >
+    <p>Sonlink Tricycle</p>
+</div>
+  </section>
+
+  <!-- Popup Modal -->
+  <div id="popup-modal" onclick="closePopup()">
+    <img id="popup-img" alt="Enlarged Image" />
+    <br>
+    <button onclick="closePopup()">Close</button>
+  </div>
+
+  <!-- Contact -->
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <p>TEL: 0246621077 / 0500242404 / 0248999588</p>
+   
+    <a href="https://wa.me/+233246621077" class="whatsapp" target="_blank">Chat us on WhatsApp</a>
+  </section>
+
+  <!-- Location -->
+  <section class="location">
+    <h2>Find Us</h2>
+    <p>Around Alhaji Aliu Mahama Sports Stadium opposite VVIP Gate, Tamale</p>
+    
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    Designed by Kwanden Larbi Nicodemus <br>
+    klarbinicodemus@gmail.com <br>
+    0204576618  <br>
+    &copy; 2025 KABILARA MOTORS
+  </footer>
+
+  <script src="kabila.js"></script>
+</body>
+</html>
